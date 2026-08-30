@@ -65,3 +65,37 @@ console.log(typeof heroes) //object=> datatype of array and object is called as 
 myfunc(); // function call=> all things in function execute here
 
 
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// 🔴. MEMORY............................📙
+// 📙 1. Stack (all primitive datatype use stack memory) => A copy is created..(when we use stack memory then we got copy of which i declare)
+// 📙 2. Heap (all Non-primitve datatype use stack memory) => A refernce to the original value i.e., changes can be made to original value 
+
+let myYoutubeName = "ExplorerDotCom";
+let anothername = myYoutubeName;
+
+anothername = "Simple Thinks";
+console.log(anothername); //changed to Simple Thinks
+console.log(myYoutubeName); // stick to old value => ExplorerDotCom .....bcoz here copy of variable myYoutubeName is passed to anothername,,,,thats why origial value don.t get affected
+
+
+// 📙 Advanced datatype - Objects 
+// User1 is primitive but value inside it are objects that are stored in heap...
+let user1 = {  //will copy and get into heap
+    email: "user@gmail.com",
+    upi: "user@ybl",
+};
+
+let user2 = user1;
+// Taking value from user1 thus user2 or user1 pointing to same data
+
+user2.email = "tirupati@google.com";
+console.log(user1.email);
+console.log(user2.email);
+// both give same value...bcz both are pointing toward same reference thats why if we change the by user2 that exacct change the reference data ....so user1 is also changed.
+
+
+
+// 🔴. Must refer the documentation of ECMA js site....and also prefer MDN.
