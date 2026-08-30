@@ -39,7 +39,7 @@ console.log("the boolean value of 1,0 is: ");
 let boolenIsLoggedIn = Boolean(isLoggedIn)
 console.log(boolenIsLoggedIn)
 // "" =>a empty string will give false
-// "varnika" => a non-empty string will give true
+// "balaJi" => a non-empty string will give true
 
 //converting to string
 let num = 26;
@@ -47,3 +47,53 @@ let StringNum = String(num);
 console.log(StringNum);
 
 console.log(typeof StringNum) //=> gives type string1
+
+
+// 🔴.*********************** Operations *****************************.....📙
+
+
+console.log("//////// STARTING OPERATIONS NOW///////////");
+let values = 3;
+let negvalue = -values;
+console.log(negvalue);
+//normal maths-operations
+console.log(2 + 2);
+console.log(2 - 2);
+console.log(2 * 2);
+console.log(2 ** 2); //power
+console.log(2 / 3);
+console.log(2 % 2); //modulus operator that gives reminder
+let str1 = "hello";
+let str2 = "Tirupati";
+//joining the two
+let str3 = str1 + str2;
+console.log(str3); // gives hello Tirupati
+
+//complex situations ......do study them on ECMA_Script site
+console.log("1" + 2); //=> 12
+console.log(1 + "2"); // => 12
+console.log("1" + "2"); // =>12
+console.log("1" + 2 + 2); //=> 122
+console.log(1 + 2 + "2"); // =>32
+console.log("1" + 2 + "2"); // =>112
+
+
+// 📙.Operator Precedence.=> () > ** > *,/,% > +,-. {for equal priority we see from left to right}
+
+//console.log(3 + 4 * 5 % 3); dont do in this way,,instead use parenthesis
+console.log((3 + 4) * 5 % 3);
+
+// similarly dont do this way..........
+console.log(+true); // =>1
+console.log(+""); // as "" =>empty qoutes give false that is 0
+
+
+let num1, num2, num3;
+num1 = num2 = num3 = 2 + 2; //perform simple and readable things to make code simple
+let gameCounter = 100;
+
+gameCounter++; //study about pre and postfix increments
+console.log(gameCounter); 
+
+//visit the link below: link to study
+// https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
