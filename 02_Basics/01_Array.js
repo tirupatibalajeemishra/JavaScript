@@ -82,3 +82,150 @@ const myn2 = myArr.splice(1, 3); // changed original array
 
 console.log(myn2);
 console.log("C", myArr); // Original array is changed here, Splice parts are remove from original array
+
+
+
+
+// Explore More on MDN...Explore on MDN.......📙
+
+
+
+
+// 🔴. These Code from Delta (Previous Study Material)...📙
+
+// Array Basics:->
+let students3=["aman","shradha","rajat"];
+console.log(students3[0]);
+console.log(students3[1],students3[2], students3[4]);
+console.log(students3);
+console.log(students3.length);
+let arr=[45,48,56,25,35];
+let info=["aman",45,5.8];// mixed array
+console.log(info[0]);
+console.log(info[0][0],info[0][3]);
+console.log(info[0].length);
+
+// empty array
+let newArr4=[];
+
+
+
+let fruits=["mango","apple","litchi"];
+console.log(fruits);
+fruits[2]="banana";
+console.log(fruits);
+fruits[9]="pineapple";
+console.log(fruits);
+
+
+// Array Methods:---->
+
+// Push(), pop(), unshift(), shift().....📙📙
+let cars=["audi","toyota","landrover","landcruser","BMW"]
+console.log(cars);
+cars.push("farari");
+cars.push("maruti");
+cars.push("mahindra");
+console.log(cars);
+console.log(cars.pop()); // ye pop jo hai bs delete nhi karta ye return bhi karta hai
+console.log(cars);
+cars.unshift("Defender");
+console.log(cars);
+cars.shift();
+console.log(cars);
+
+
+
+// indexOf(), includes().....📙📙
+let cars1=["audi","toyota","landrover","landcruser","BMW"];
+console.log(cars1);
+console.log(cars1.indexOf("toyota"));
+console.log(cars1.indexOf("BMW"));
+console.log(cars1.indexOf("bmw"));
+
+console.log(cars1.includes("audi"));
+console.log(cars1.includes("landcruser"));
+console.log(cars1.includes("landCruser"));
+
+
+
+// concat, reverse.....📙
+let primary=["red","yellow","blue"];
+let secondary=["orange","green","violet"];
+console.log(primary.concat(secondary));
+console.log(secondary.concat(primary));
+let temp=primary.concat(secondary);
+console.log(temp);
+
+console.log(primary.reverse());
+let tem=secondary.reverse();
+console.log(tem);
+console.log(primary); // ye original wala bhi change ho jata hai
+console.log(secondary);
+
+
+
+// slice (copies a portion of an array).....📙
+let cars3=["audi","toyota","landrover","landcruser","BMW"];
+console.log(cars3.slice());
+console.log(cars3.slice(2));
+console.log(cars3.slice(2,4));
+console.log(cars3.slice(-2));
+
+
+
+// splice: removes,replaces,add elements in place.....📙
+// splice(start,deletecount,item0...itemN).....
+let colors=["red","yellow","blue","orange","pink","white","black","green","yellowgreen","brown"];
+console.log(colors);
+console.log(colors.splice(5)); // means ye normally slice wale jaisa kaam karega...
+console.log(colors);
+console.log(colors.splice(0,1)); // start and deletecount mil gya .....mtlb start 0 index se hoga and 1 digit delete karegaa
+console.log(colors);
+console.log(colors.splice(0,3)); // ab red ht chuka hai upar wale line ke wajah se....to red ke aage 3 jo hai unke delete kar degaa
+console.log(colors);
+console.log(colors.splice(0,1,"aqua","grey")); // pahle ko hata ke delete kar de
+console.log(colors);
+console.log(colors.splice(1,0,"skyblue"));
+console.log(colors);
+
+
+
+// sort: sorts an array📙
+let days=["monday","sunday","wednesday","tuesday"];
+console.log(days);
+console.log(days.sort()); // ye real array me change karegaa...
+console.log(days); // ye sorted array degaa
+
+let squares=[25,16,4,36,9];
+console.log(squares);
+console.log(squares.sort());
+console.log(squares);
+
+
+
+// Practice question.....->📙
+// 1.->(chage start to end using only splice)....
+// start: ['january','july','march','august'];
+// end: ['july','june','march','august'];
+let start= ['january','july','march','august'];
+console.log(start);
+start.splice(0,1);
+console.log(start);
+start.splice(1,0,"june");
+console.log(start);
+
+
+// upar wala task ek line me kar de
+let start1= ['january','july','march','august'];
+console.log(start1);
+start1.splice(0,2,"july","june");
+console.log(start1);
+
+
+// Nested Arrays->>(multidimentional array)...📙
+let nums=[[2,4,4],[3,6],[4,6,8,5]];
+console.log(nums);
+console.log(nums[0].length);
+console.log(nums[2].length);
+console.log(nums[2][2]);
