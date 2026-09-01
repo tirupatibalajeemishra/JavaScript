@@ -1,23 +1,23 @@
-// // 🔴. Array..............................................................................................................................📙
+// 🔴. Array..............................................................................................................................📙
 
-// // 📙. Arrays => Go on arrays js mdn
-// const myArray = [0, 2, 3, 64, 21, true , "tirupati"];
-// // 📙. Study concept of shallow and deep copy on mdn site
-// console.log(myArray[0]); // =>0
-// console.log(myArray[5]); // =>true
-// console.log(myArray[6]); // =>tirupati
-
-
-// // 📙. Shallow Copy: Creates a new array, but nested arrays/objects are still connected to the original, Means if i copy a array 'A' to array 'B', then if i change something in array "A" then already change occur in array 'B' also....bcz both are share the same reference.
-
-// // 📙. Deep Copy: Creates a new array where nested arrays/objects are also completely copied, Means if i copy a array 'A' to array 'B', then if i change something in array "A" then change in 'A' is only occur in 'A' not in array 'B', bcz both are not share the same reference. Copy is created seperately..
+// 📙. Arrays => Go on arrays js mdn
+const myArray = [0, 2, 3, 64, 21, true , "tirupati"];
+// 📙. Study concept of shallow and deep copy on mdn site
+console.log(myArray[0]); // =>0
+console.log(myArray[5]); // =>true
+console.log(myArray[6]); // =>tirupati
 
 
-// //📙. Second way to Declare
-// const students = ["tirupati", "aditya", "shashwat", "priyanshu"];
-// console.log(students);
-// console.log(students[1]);
-// console.log(students[3]);
+// 📙. Shallow Copy: Creates a new array, but nested arrays/objects are still connected to the original, Means if i copy a array 'A' to array 'B', then if i change something in array "A" then already change occur in array 'B' also....bcz both are share the same reference.
+
+// 📙. Deep Copy: Creates a new array where nested arrays/objects are also completely copied, Means if i copy a array 'A' to array 'B', then if i change something in array "A" then change in 'A' is only occur in 'A' not in array 'B', bcz both are not share the same reference. Copy is created seperately..
+
+
+//📙. Second way to Declare
+const students = ["tirupati", "aditya", "shashwat", "priyanshu"];
+console.log(students);
+console.log(students[1]);
+console.log(students[3]);
 
 
 //📙. Third way to declare
