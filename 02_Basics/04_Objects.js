@@ -29,3 +29,26 @@ const regularUser = {
 console.log(regularUser.fullname)
 console.log(regularUser.fullname.userfullname);
 console.log(regularUser.fullname.userfullname.lastname) // Gives output => Mishra
+
+// 📙. Here 1,2,3,4 are the keys similar to that of email,fullname, etc in object regular user
+const obj1 = { 1: "a", 2: "b" }
+const obj2 = { 3: "a", 4: "b" }
+
+// 📙. Combining them
+// Creates Some Problem
+const obj3 = {obj1, obj2}
+console.log(obj3); // 📙. Here we get the similer problem like array
+
+
+// 📙. Combining or Copying 
+// 📙. See how results are differnet from previous ones
+const obj4 = Object.assign({}, obj1, obj2); // Passing an empty parenthesis to get combined value, not imp but good to pass
+
+// 📙. if we give empty {}, this means this{} act as a source and all other objects work as the target........if this{} will not give it in syntax no problem....those is written first in objects syntax, that is treat as the source and other will treat as a targets....📙
+console.log(obj4);
+
+// 📙. Study more about object.assign on mdn Web Docs
+console.log(obj1)
+console.log(obj4 === obj1)
+
+
