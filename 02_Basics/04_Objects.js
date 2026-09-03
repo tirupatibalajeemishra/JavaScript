@@ -52,3 +52,30 @@ console.log(obj1)
 console.log(obj4 === obj1)
 
 
+// 📙. But we  will use Something else....i.e., spreading n combine them in obj5....(by using spreading object{...object_name})
+const obj5 = { ...obj1, ...obj2 }
+console.log(obj5)
+
+
+// 📙. When values comes from database then it come like this..(Jab bhi database se value aayegi toh vo kuch aise aegi...liekly array of object)
+// 📙. Array of Objects
+const USERS = [
+    { // ye ek object h inside array...aise or bhi objects ho skte h within an array
+        id: 1,
+        email: "tirupati@google.com"
+
+    },
+
+    {
+        name: "tirupati",
+        grade: 'A',
+        email: "tech@gmail.com"
+    }
+];
+// 📙. Now Accessing the value
+// 📙. As users is an array so use sq.braclets with index n then as at index there is an object , so ab us object kisi ek entity ko use krne k liye hum (.) use krege with entity name like email or id or name etc.
+
+console.log(USERS[0]);
+console.log(USERS[0].email);
+console.log(USERS[1].email);
+
