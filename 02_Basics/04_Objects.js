@@ -12,3 +12,20 @@ tinderUser.isLoggedIn = false;
 
 console.log(tinderUser);
 console.log(tinder);
+
+
+// 📙. Nesting of object(objects of object)...
+const regularUser = {
+    email: "some@gmail.com",
+    fullname: { // creating object inside object
+        userfullname: {
+            firstname: "Tirupati",
+            lastname: "Mishra"
+        }
+    }
+}
+
+// 📙. Accesing the objects data..
+console.log(regularUser.fullname)
+console.log(regularUser.fullname.userfullname);
+console.log(regularUser.fullname.userfullname.lastname) // Gives output => Mishra
